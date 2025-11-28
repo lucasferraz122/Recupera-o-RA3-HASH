@@ -25,14 +25,14 @@ O objetivo foi analisar como o tamanho da tabela ($m$) e o tipo de função infl
 
 ## **Metodologia**
 
+**Distribuições mais uniformes reduzem o custo médio no encadeamento separado.**
+
 O experimento consistiu em inserir e buscar chaves inteiras aleatórias em tabelas de tamanhos primos distintos ($m \\in \\{1009, 10007, 100003\\}$) utilizando três funções de hash diferentes. Foram medidos o tempo de execução, o número de colisões e o custo de busca para validar a eficiência do encadeamento.
 
 *Foram seguidas rigorosamente as regras de auditoria do enunciado:*
 - *Sentinela impressa antes de cada execução (H_DIV/H_MUL/H_FOLD)*
 - *Checksum calculado com os 10 primeiros hash values*
 - *Médias de 5 repetições para todas as métricas temporais*
-
-**Distribuições mais uniformes reduzem o custo médio no encadeamento separado.**
 
 ## **Resultados e Análise**
 
@@ -60,7 +60,7 @@ O custo de busca confirma a eficiência da tabela hash bem dimensionada. Nas tab
 
 Confira a explicação detalhada do código e da análise dos dados no YouTube:
 
-
+https://youtu.be/oY8VDjms6O4
 
 ## **Autor**
 
