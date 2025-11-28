@@ -17,11 +17,7 @@ O objetivo foi analisar como o tamanho da tabela ($m$) e o tipo de função infl
    java tabelahashrecuperacao
 
    *O programa exibirá os resultados em formato CSV no terminal, junto com os logs de auditoria.*  
-3. (Opcional) Gerar CSV limpo:  
-   Para salvar apenas os dados em um arquivo (sem os logs de auditoria):  
-   java tabelahashrecuperacao \> resultados.csv 2\> NUL
 
-   *(No Linux/Mac use 2\> /dev/null)*
 
 ## **Metodologia**
 
