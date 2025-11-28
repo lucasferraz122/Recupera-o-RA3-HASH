@@ -27,6 +27,11 @@ O objetivo foi analisar como o tamanho da tabela ($m$) e o tipo de função infl
 
 O experimento consistiu em inserir e buscar chaves inteiras aleatórias em tabelas de tamanhos primos distintos ($m \\in \\{1009, 10007, 100003\\}$) utilizando três funções de hash diferentes. Foram medidos o tempo de execução, o número de colisões e o custo de busca para validar a eficiência do encadeamento.
 
+*Foram seguidas rigorosamente as regras de auditoria do enunciado:*
+- *Sentinela impressa antes de cada execução (H_DIV/H_MUL/H_FOLD)*
+- *Checksum calculado com os 10 primeiros hash values*
+- *Médias de 5 repetições para todas as métricas temporais*
+
 **Distribuições mais uniformes reduzem o custo médio no encadeamento separado.**
 
 ## **Resultados e Análise**
@@ -40,7 +45,7 @@ Abaixo estão os gráficos gerados a partir dos dados do experimento, mostrando 
 Neste gráfico, observamos que o aumento do tamanho da tabela ($m$) reduz drasticamente as colisões para as funções de **Divisão** e **Multiplicação**, tendendo a zero. Curiosamente, a função de **Dobramento** (linha verde) manteve uma taxa de colisões constante, mostrando-se menos eficiente para este conjunto de chaves inteiras.
 
 ### **2\. Tempo de Inserção vs Tamanho do Dataset**
-<img width="567" height="372" alt="{164C615E-75BA-4C45-9DAD-617F58553AE3}" src="https://github.com/user-attachments/assets/81307048-7389-45db-ad53-37aa9cd2d802" />
+<img width="569" height="369" alt="{9FC8748A-FD9F-4EE2-9A51-E0D080B46376}" src="https://github.com/user-attachments/assets/1993f477-680f-44e2-bc93-6cc3fc54a06b" />
 
 
 Aqui fica evidente o impacto do **Fator de Carga**. A linha roxa escura (tabela pequena, $m=1009$) dispara conforme aumentamos a quantidade de dados, pois a tabela fica cheia e o programa perde tempo percorrendo listas longas. Já as tabelas maiores (linhas inferiores) mantêm o tempo de inserção baixo e linear, pois quase não há colisões.
